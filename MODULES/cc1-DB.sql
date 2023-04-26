@@ -69,6 +69,7 @@ select * FROM users WHERE username="AbdElKader" and passwords=MD5("123456");
 select * FROM CV;
 
 INSERT INTO cv(cv_name,cv_email,cv_phone,cv_adr,summary,education,experience,skills,picture_id,users_id) VALUES ('achraf','potato@gmail.com','456123789','blabla','blabla blabla blabla blabla blabla blabla','blabla blabla blabla blabla blabla blabla','blabla blabla blabla blabla blabla blabla','blabla blabla blabla blabla blabla blabla','2','1');
+INSERT INTO CV(cv_name, cv_email, cv_phone, cv_adr, summary, education, experience, skills, picture_id, users_id) VALUES ("Emma Johnson", "emma.johnson@email.com", "+1-202-555-0123", "123 Main St, Anytown USA", "A highly motivated and skilled web developer with over 3 years of experience in front-end and back-end development. Proficient in HTML, CSS, JavaScript, React, Node.js, and SQL. Excellent problem-solving and teamwork skills, with a passion for building user-friendly web applications.", "Bachelor of Science in Computer Science, XYZ University, 2014-2018", "Web Developer, ABC Company, 2019-present", "HTML, CSS, JavaScript, React, Node.js, SQL", 1, 2);
 
 INSERT INTO cv(cv_name,cv_email,cv_phone,cv_adr,summary,education,experience,skills,picture_id,users_id) VALUES ('$Name','$Email','$Phone','$Address','$Summary','$Education','$Experience','$Skills','$PicId','$user_id');
 
@@ -86,6 +87,8 @@ UPDATE cv SET cv_name="$Name",cv_email="$Email",cv_phone="$Phone",cv_adr="$Addre
 
 
 SELECT cv_name,cv_email,summary,fill_stamp FROM cv WHERE users_id = '$user_id' ORDER BY fill_stamp DESC;
+
+DELETE * FROM cv WHERE users_id = '$user_id' AND cv_id = '$cv_id'
 
 
 

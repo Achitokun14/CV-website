@@ -50,9 +50,9 @@
 								<td class="data-cell"><?php echo $row['cv_email']; ?></td>
 								<td class="data-cell"><?php echo $row['summary']; ?></td>
 								<td class="data-cell"><?php echo $row['fill_stamp']; ?></td>
-								<td class="data-cell"><a href="./cc1-Download form.php">Download <?php echo $row['cv_id']; ?></a></td>
-								<td class="data-cell"><a href="./cc1-Modify form.php">Edit</a></td>
-								<td class="data-cell"><a href="./cc1-Delete form.php">Delete</a></td>
+								<td class="data-cell"><a href="<?php echo "./cc1-Download form.php?cv_id=" . $row['cv_id']; ?>">Download <?php echo $row['cv_id']; ?></a></td>
+								<td class="data-cell"><a href="<?php echo "./cc1-Modify form.php?cv_id=" . $row['cv_id']; ?>">Edit</a></td>
+								<td class="data-cell"><a href="<?php echo "./cc1-Delete form.php?cv_id=" . $row['cv_id']; ?>">Delete</a></td>
 							</tr>
 					<?php
 						}
