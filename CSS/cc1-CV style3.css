@@ -77,15 +77,16 @@ body {
 }
 
 .titel-pack {
-    font-size: 40px;
+    font-size: 30px;
     color: #8b0000;
     text-shadow: 0 0 10px #00008b;
     text-transform: uppercase;
     font-family: 'Cinzel Decorative', cursive;
 }
 
+
 .text-pack {
-    font-size: 18px;
+    font-size: 14px;
     color: #8b0000;
     text-shadow: 0 0 10px #800080;
     margin: 30px;

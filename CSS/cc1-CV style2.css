@@ -99,6 +99,11 @@ input[type="submit"],input[type=file]  {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
 
 #image-file {
     margin-bottom: 5px;
@@ -113,10 +118,7 @@ input[type="submit"],input[type=file]  {
 }
 
 
-input[type="submit"]:hover {
-    background-color: #3e8e41;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-}
+
 
 
 
@@ -433,7 +435,24 @@ img {
     margin-left: 10px;
     margin-right: 10px;
     width: 300px;
-    
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    text-decoration-line: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#download-pdf:hover,#save-cv:hover {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px;
+    background-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    text-decoration-line: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
 }
 
 
