@@ -79,9 +79,9 @@
 			</div>
 		</div>
 		<!-- add links -->
-		<form action="#" method="post" id="operations">
+		<form action="./cc1-Download form.php" method="post" id="operations">
 			<input type="submit" value="Download PDF" name="download-pdf" id="download-pdf">
-			<input type="submit" value="Save CV" name="save-cv" id="save-cv">
+			<!--<input type="submit" value="Save CV" name="save-cv" id="save-cv">-->
 		</form>
 	</div>
 	<?php
